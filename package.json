@@ -1,0 +1,12 @@
+{
+	"dependencies": {
+		"@symfony/webpack-encore": "^5.0.1",
+		"turbo-view-transitions": "^0.3.0"
+	},
+	"scripts": {
+		"dev-server": "encore dev-server",
+		"dev": "encore dev",
+		"watch": "encore dev --watch",
+		"build": "encore production --progress"
+	}
+}

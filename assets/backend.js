@@ -1,3 +1,5 @@
+import './backend.css';
+
 import { shouldPerformTransition, performTransition } from "turbo-view-transitions";
 
 document.addEventListener("turbo:before-render", (event) => {

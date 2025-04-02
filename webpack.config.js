@@ -7,7 +7,7 @@ Encore.setOutputPath('public/')
 	.disableSingleRuntimeChunk()
 	.enableSourceMaps(!Encore.isProduction())
 	.enableVersioning(Encore.isProduction())
-	.addEntry('backend', './assets/js/backend.js');
+	.addEntry('backend', './assets/backend.js');
 
 const config = Encore.getWebpackConfig();
 config.watchOptions = {

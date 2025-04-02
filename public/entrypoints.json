@@ -1,6 +1,9 @@
 {
   "entrypoints": {
     "backend": {
+      "css": [
+        "/bundles/contaobackendviewtransition/backend.5b805dc2.css"
+      ],
       "js": [
         "/bundles/contaobackendviewtransition/backend.f093c059.js"
       ]

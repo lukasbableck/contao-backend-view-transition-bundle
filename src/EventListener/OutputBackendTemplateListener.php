@@ -2,8 +2,6 @@
 namespace Lukasbableck\ContaoBackendViewTransitionBundle\EventListener;
 
 use Contao\CoreBundle\DependencyInjection\Attribute\AsHook;
-use Symfony\Component\Asset\Package;
-use Symfony\Component\Asset\VersionStrategy\JsonManifestVersionStrategy;
 
 #[AsHook('outputBackendTemplate')]
 class OutputBackendTemplateListener {
@@ -14,10 +12,6 @@ class OutputBackendTemplateListener {
 				'<meta name="view-transition"></head>',
 				$buffer
 			);
-
-			$package = new Package(new JsonManifestVersionStrategy(__DIR__.'/../../public/manifest.json'));
-			$GLOBALS['TL_CSS'][] = $package->getUrl('backend.css');
-			$GLOBALS['TL_JAVASCRIPT'][] = $package->getUrl('backend.js');
 		}
 
 		return $buffer;
